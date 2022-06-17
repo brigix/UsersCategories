@@ -10,6 +10,3 @@ export class Category {
   }
 }
 
-export class NestedCategory {
-    category_1 = []
-}

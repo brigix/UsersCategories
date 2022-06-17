@@ -5,7 +5,6 @@ import { Box, VStack } from '@chakra-ui/react';
 import { useCategories } from '../helpers/getCategories';
 import { userActions } from '../redux/actions/user.actions';
 import LinkButton from './LinkButton';
-import { nestedObjects } from '../helpers/nestedObject';
 
 const CategoryMeniu = () => {
   const categoriesArr = useCategories();
@@ -13,14 +12,11 @@ const CategoryMeniu = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  console.log('CATEGORIES ARR:::::', categoriesArr);
-  const groupedArr = nestedObjects(categoriesArr);
-
-  console.log('GROUPED ARR:::::', groupedArr);
   const getCategory = category => {
     navigate(`usersList/${category}`, { replace: true });
     dispatch(userActions.getUsersByCategory(category));
   };
+
   return (
     <VStack
       spacing={2}

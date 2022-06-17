@@ -63,6 +63,10 @@ export function configureFakeBackend() {
             subCategory_2: params.subCategory_2,
             subCategory_3: params.subCategory_3,
           });
+          /*      nestedCategories = [
+            ...nestedCategories,
+            NestedCategoryArr(nestedCategories, category),
+          ]; */
           categories = [...categories, category];
           resolve({ ok: true, json: () => category });
           return;
