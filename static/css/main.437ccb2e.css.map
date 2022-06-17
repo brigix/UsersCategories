@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.437ccb2e.css","mappings":"AAAA,OACI,SAAU,CACV,cAAe,CACf,eACJ","sources":["components/style.css"],"sourcesContent":[".error {\n    color: red;\n    font-size: 1rem;\n    font-weight: 300;\n}"],"names":[],"sourceRoot":""}
