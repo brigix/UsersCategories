@@ -7,7 +7,9 @@ In the project directory run
 
 ### `npm install`
 
-Start webpage in the project directory run
+## Start webpage 
+
+In the project directory run
 
 ### `npm start`
 
